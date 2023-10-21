@@ -24,7 +24,7 @@
                 </li> 
                 {{#each novedades}}
                 <li>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">{{titulo}}</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="{{imagen}}"> {{titulo}}</a>
                 </li>
                 {{/each}}
 
@@ -41,6 +41,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="Modal body">
+                        <img src="{{imagen}}">
                         <h5>{{subtitulo}} </h5>
                         <p>{{cuerpo}} </p>
                     </div>
