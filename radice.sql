@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Creato il: Ott 10, 2023 alle 16:51
+-- Creato il: Ott 23, 2023 alle 09:42
 -- Versione del server: 8.0.31
 -- Versione PHP: 8.0.26
 
@@ -33,16 +33,17 @@ CREATE TABLE IF NOT EXISTS `novedades` (
   `titulo` varchar(250) NOT NULL,
   `subtitulo` text NOT NULL,
   `cuerpo` text NOT NULL,
+  `img_id` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dump dei dati per la tabella `novedades`
 --
 
-INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
-(7, 'Nueva receta', 'Bogavante asado sobre jugo de pimientos a la brasa y cebolla morada', 'Este plato es \"delicado en texturas pero también con los sabores muy marcados\".\r\nLos cocineros utilizan una emulsión de las cabezas y pétalos encurtidos de cebolla. El fondo de este plato es un jugo de pimientos asados a la brasa, lo que le da el toque de sabor definitivo.  '),
-(3, 'Nueva receta', 'Ensalada con guarniciones marinas', 'En la base de esta composición encontramos semillas de corazón de tomate en rama, aliño agridulce, cremosos de aceite de oliva, rúcula selvática y edemame al vapor. Sobre estos ingredientes, el chef añade láminas de hielo raspado con emulsión de lechuga oxidada y ligeramente picante, con vinagre de Jerez, cogollos de lechuga, hoja de roble, oxalis y hojas mosaico. \r\n\r\nEste es uno de esos platos que nos invierten la lógica. Por ello, el pescado acompaña a la ensalada y no al revés, como estamos acostumbrados. Como guarnición, un rodaballo con emulsión de sus espinas y pimienta de Sichuan, besugo con emulsión de sus espinas y pimienta de Java así como salmonete con emulsión de sus espinas y pimienta Sansho.  ');
+INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`, `img_id`) VALUES
+(7, 'Nueva receta', 'Bogavante asado sobre jugo de pimientos a la brasa y cebolla morada', 'Este plato es \"delicado en texturas pero también con los sabores muy marcados\".\r\nLos cocineros utilizan una emulsión de las cabezas y pétalos encurtidos de cebolla. El fondo de este plato es un jugo de pimientos asados a la brasa, lo que le da el toque de sabor definitivo.  ', NULL),
+(12, 'Nueva receta', 'Bogavante asado sobre jugo de pimientos a la brasa y cebolla morada', 'ste plato es \"delicado en texturas pero también con los sabores muy marcados\".\r\nLos cocineros utilizan una emulsión de las cabezas y pétalos encurtidos de cebolla. El fondo de este plato es un jugo de pimientos asados a la brasa, lo que le da el toque de sabor definitivo.   ', 'hv5b1rdcxbqojr5km1gx');
 
 -- --------------------------------------------------------
 
